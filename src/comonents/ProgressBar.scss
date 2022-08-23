@@ -1,0 +1,27 @@
+.progress_wrapper{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    .progress_chip{
+        width: 20%;
+        border-radius: 20px;
+        background: rgba(250, 193, 127, 0.001);
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        height: 7px;
+    }
+    .percent_20{
+        background-color: greenyellow;
+    }
+    .percent_50{
+        background-color: green;
+    }
+    .percent_75{
+        background-color: brown;
+    }
+    .percent_100{
+        background-color: red;
+    }
+}

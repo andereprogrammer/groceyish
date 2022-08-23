@@ -1,0 +1,64 @@
+.item_container_wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 291px;
+    width: 223px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    .img_space{
+        height: 220px;
+        background: #F4F6FA;
+        width: 186px;
+        object-fit: contain;
+        border-radius: 5px;
+        align-items: center;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        padding: 6px;
+    }
+    .item_name{
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+        padding: 4px;
+        line-height: 16px;
+        margin: 5px;
+        width: 186px;
+
+    }
+    .item_contain_molecule{
+        font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    padding: 5px;
+    line-height: 15.5px;
+    margin-top: 4px;
+    /* margin: 1px; */
+    width: 186px;
+
+    }
+    .item_progress_bar{
+        text-align: left;
+        padding: 5px;
+        margin: 1px;
+        width: 186px;
+        height: 50px;
+
+    }
+    .item_pricing{
+        font-family: sans-serif;
+        font-size: 18;
+        font-weight: 700;
+        text-align: left;
+        padding: 5px;
+        margin: 1px;
+        width: 186px;
+        line-height: 18.5px;
+
+    }
+}
