@@ -39,7 +39,6 @@ function VisualInformationList(props) {
             </select>
           </div>
           <div className="rightheader" onClick={handleScroll}>
-           
           </div>
         </div>
        <div className="container">
@@ -56,9 +55,6 @@ function VisualInformationList(props) {
             <div></div>
           )}
        </div>
-         
-       
-       
       </div>
     </div>
   );

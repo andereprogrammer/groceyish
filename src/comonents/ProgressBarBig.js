@@ -16,7 +16,7 @@ function ProgressBarBig(props) {
   }
 
 if(ingri === "Protiens"){
-    console.log('object');
+    
     if (percent <= 25 && percent > 0) {
         bg_20 = "percent_20_p";
       } else if (percent <= 50 && percent > 25) {

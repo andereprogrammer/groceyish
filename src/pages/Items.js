@@ -18,7 +18,6 @@ function Items() {
             <NavLink style={{textDecoration: 'none'}} to={{
                 pathname:"/product",
                 state:itemDetails
-                
             }}>
             <div className='item_back'>
                 <img src="/images/backbtn.png" alt="" />

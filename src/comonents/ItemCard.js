@@ -6,12 +6,7 @@ function ItemCard(props) {
     let keys = Object.keys(props.productInfo.productNutrition); 
     let mainValue = props.productInfo.productNutrition[props.productNutrition]
     let val = props.productNutrition
-//    keys.map((k)=>{
-//     if( props.productNutrition == k){
-//       val = props.productInfo.productNutrition[k]
-//     }
-//    })
-    
+
   return (
     <div>
         <div className="item_container_wrapper">
