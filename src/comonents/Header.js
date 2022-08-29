@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './Header.scss'
 import SearchBar from './SearchBar'
 
@@ -7,7 +8,7 @@ function Header() {
     <div className='header'>
     <div className="main-header">
         <div className="left-side-header">
-           <img src="/images/Logo.svg" alt="Logo" />
+           <NavLink to={"/home"}><img src="/images/Logo.svg" alt="Logo" /></NavLink>
         </div>
         <div className="search-bar">
             <SearchBar/>

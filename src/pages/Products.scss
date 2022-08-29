@@ -1,0 +1,24 @@
+.product_wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .filler{
+        height: 30px;
+    }
+    .oops{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        flex-direction: column;
+        gap: 10px;
+        img{
+            object-fit: contain;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

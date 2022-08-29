@@ -1,0 +1,45 @@
+.progress_wrapper{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    .progress_chip_bar{
+        width: 100%;
+        border: 1px solid #0000001F;
+        border-radius: 20px;
+        background: rgba(233, 129, 11, 0.001);
+        height: 7px;
+    }
+    .progress_chip{
+        width: 100%;
+        border-radius: 20px;
+        background: rgba(233, 129, 11, 0.001);
+        height: 7px;
+    }
+    .percent_20{
+        background-color: #86FA81;
+    }
+    .percent_50{
+        background-color: #FAC17F;
+    }
+    .percent_75{
+        background-color: #EDEA5A;
+    }
+    .percent_100{
+        background-color: rgba(163, 35, 35, 0.482);
+    }
+    .percent_20_p{
+        background-color: #86FA81;
+    }
+    .percent_50_p{
+        background-color: #76F262;
+    }
+    .percent_75_p{
+        background-color: #48DD45;
+    }
+    .percent_100_p{
+        background-color: #48DD45;
+    }
+}

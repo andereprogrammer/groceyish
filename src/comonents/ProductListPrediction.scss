@@ -1,9 +1,10 @@
 .prediction_list{
-    width: 70%;
-    height: 356px;
+    width: 80%;
+    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 30px;
     align-items: center;
     border: 1px solid #E5E5E5;
     border-radius: 6px;
@@ -11,7 +12,8 @@
 }
 .prediction_list_wrapper{
     width: 90%;
-    height: 356px;
+    height: 390px;
+    margin-bottom: 17px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,12 +21,12 @@
     padding: 16px;
     .listheader{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 95%;
-        margin-top: 17px;
-        height: 30px;
-        margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-top: 17px;
+    height: 34px;
+    margin-bottom: 25px;
         .leftheader{
             font-size: 18px;
             font-family: sans-serif;
@@ -56,5 +58,9 @@
     overflow-x: scroll;
     overflow-y: hidden;
     height: 350px;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      
 
 }

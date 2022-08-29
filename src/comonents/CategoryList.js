@@ -1,33 +1,54 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './CategoryList.scss'
 
 function CategoryList() {
     const category = [{
         id:"1",
-        src:"/images/Grocerish/Category Images/Batter.png"
+        src:"/images/Batter.png",
+        name:"Ready made"
     },
     {
         id:"2",
-        src:"/images/Grocerish/Category Images/motherdiary.png"
+        src:"/images//motherdiary.png",
+        name:"Diary"
     },{
         id:"3",
-        src:"/images/Grocerish/Category Images/Cavins.png"
+        src:"/images/Cavins.png",
+        name:"Drinks"
     },{
         id:"4",
-        src:"/images/Grocerish/Category Images/Nutella.png"
+        src:"/images/Nutella.png",
+        name:"Spreads"
     },{
         id:"5",
-        src:"/images/Grocerish/Category Images/Oreo.png"
+        src:"/images/Oreo.png",
+        name:"Biscuits"
     },{
         id:"6",
-        src:"/images/Grocerish/Category Images/Refined Oil.png"
+        src:"/images/Refined Oil.png",
+        name:"Oils"
     },{
         id:"7",
-        src:"/images/Grocerish/Category Images/image 9.png"
+        src:"/images/image 9.png",
+        name:"Vegies"
     },{
         id:"8",
-        src:"/images/Grocerish/Category Images/image 7.png"
+        src:"/images/image 7.png",
+        name:"Fruits"
     }]
+    const handleClick = (id) =>{
+        category.map((m)=>{
+            let temp = document.getElementById(m.id)
+            temp.classList.remove('imgactive')
+            let t = document.getElementById(m.name)
+            t.classList.remove('active')
+        })
+        let ele = document.getElementById(id.id)
+        let nm = document.getElementById(id.name)
+       ele.classList.add('imgactive');
+       nm.classList.add('active')
+    }
   return (
     <>
     <div className="category_wrapper">
@@ -35,14 +56,18 @@ function CategoryList() {
             {
                 category.map((item,index)=>{
                    return (
-                    
-                    <div key={item.id} id={item.id} className="item_wrapper">
-                        <div key={item.id} className='item_div'>
+                    <NavLink key={item.id} id={`items${item.id}`} className="item_wrapper" to={{
+                        pathname:"/product",
+                        state:{
+                            name:item.name
+                        }
+                    }} >
+                        <div onClick={()=>handleClick(item)} key={item.id} id={item.id} className='item_div'>
+                            <span className='shadow'></span>
                         <img key={item.id} src={item.src} alt={item.id} />
                         </div>
-                    </div>
-
-                    
+                        <div className="name" id={item.name}>{item.name}</div>
+                    </NavLink>
                    )
                 })
             }

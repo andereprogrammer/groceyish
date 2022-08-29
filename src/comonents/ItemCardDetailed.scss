@@ -1,0 +1,112 @@
+.item_detail {
+  height: 360px;
+
+  .item_detail_container_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 220px;
+    justify-content: center;
+    box-shadow: 0px 4px 15px 0px #0000002e;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    .item_detail_img_space {
+      height: 220px;
+      background: #f4f6fa;
+      width: 186px;
+      object-fit: contain;
+      border-radius: 5px;
+      align-items: center;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
+      padding: 6px;
+      img {
+        width: 45px;
+        object-fit: contain;
+      }
+    }
+    .item_detail_item_name {
+      display: flex;
+      width: 186px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 4px;
+    }
+    .item_detail_contain_molecule {
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: left;
+      padding: 5px;
+      line-height: 15.5px;
+      margin-top: 4px;
+      /* margin: 1px; */
+      width: 186px;
+    }
+    .item_detail_progress_bar {
+      text-align: left;
+      padding: 5px;
+      margin: 1px;
+      width: 186px;
+      height: 50px;
+    }
+    .item_detail_pricing {
+      font-family: sans-serif;
+      font-size: 18;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      padding: 5px;
+      margin: 1px;
+      gap: 3px;
+      // width: 186px;
+      line-height: 18.5px;
+      img {
+        width: 13px;
+      }
+    }
+    .item_detail_star_rating {
+      display: flex;
+      width: 83%;
+      .item_detail_img_space_rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+      }
+      .number {
+        font-size: 14px;
+        color: #adadad;
+      }
+    }
+    .item_detail_btn_wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      padding: 8px;
+      text-decoration: none;
+
+      .item_detail_nutrients_btn {
+        padding: 8px;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        text-decoration-line: none;
+        background-color: #3bb77e;
+      }
+      .item_detail_nutrients_img {
+        border: 1px solid #3bb77e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

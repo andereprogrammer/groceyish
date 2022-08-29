@@ -18,6 +18,9 @@ function ProductListPrediction() {
          "transFat",
          "Sodium"
     ]
+    const handleScroll = ()=>{
+        document.querySelector(".list_items_container").scrollLeft += 90;
+    }
     
   return (
     <div className='prediction_list'>
@@ -29,7 +32,7 @@ function ProductListPrediction() {
                     <option key={i} value={i} >{i}</option>
                 )
             })}</select></div>
-            <div className="rightheader"><img src="/images/backarrow.png" alt="arrow" /></div>
+            <div className="rightheader" onClick={handleScroll}><img src="/images/backarrow.png" alt="arrow" /></div>
            
         </div>
         <div className="list_items_container">

@@ -14,7 +14,6 @@ function Home() {
         <CategoryList/>
         <ProductListPrediction/>
         <Footer/>
-       
     </div>
   )
 }
