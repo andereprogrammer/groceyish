@@ -9,7 +9,7 @@ const data = [
         productNutrition :
             {
                 Carbohydrates:16,
-                Protiens:8,
+                Proteins:8,
                 fat:76,
                 Energy:352,
                 transFat:0,
@@ -71,11 +71,89 @@ const data = [
         productNutrition :
             {
                 Carbohydrates:43,
-                Protiens:5,
+                Proteins:5,
                 fat:52,
                 Energy:533,
                 transFat:1,
                 Sodium:6
+            }
+            
+        ,
+        productIngridients:{
+            coca:"Its made for sweetining",
+            palm_oil:"Made to give good taste",
+            chocolate:"For added taste"
+
+        }
+    },
+    {
+        productName:"Wingree Mayo",
+        productCategory:"Spreads",
+        productPrice:"20",
+        prodcutDescription:"The Winegreen Mayo is none other thant the best one , it can be used for a lot inrgration.This spread can be used where ever you need a mayo sauce ",
+        productImage:"/images/Mayo@3x.png",
+        productSecImage:"/images/Mayo@3x.png",
+
+        productNutrition :
+            {
+                Carbohydrates:8,
+                Proteins:1,
+                fat:57,
+                Energy:555,
+                transFat:0,
+                Sodium:7
+            }
+            
+        ,
+        productIngridients:{
+            coca:"Its made for sweetining",
+            palm_oil:"Made to give good taste",
+            chocolate:"For added taste"
+
+        }
+    },
+    {
+        productName:"Hersheys Coco",
+        productCategory:"Spreads",
+        productPrice:"20",
+        prodcutDescription:"The Hersheys spread is none other thant the best one , it can be used for a lot inrgration",
+        productImage:"/images/Hersheys@3x.png",
+        productSecImage:"/images/Hersheys@3x.png",
+
+        productNutrition :
+            {
+                Carbohydrates:34,
+                Proteins:5,
+                fat:14,
+                Energy:483,
+                transFat:2.5,
+                Sodium:0.75
+            }
+            
+        ,
+        productIngridients:{
+            coca:"Its made for sweetining",
+            palm_oil:"Made to give good taste",
+            chocolate:"For added taste"
+
+        }
+    },
+    {
+        productName:"Nutty Spread",
+        productCategory:"Spreads",
+        productPrice:"13",
+        prodcutDescription:"The Nutty spread is none other thant the best one , it can be used for a lot inrgration",
+        productImage:"/images/Nutty Spread@3x.png",
+        productSecImage:"/images/Nutty Spread@3x.png",
+
+        productNutrition :
+            {
+                Carbohydrates:28,
+                Proteins:5,
+                fat:9,
+                Energy:240,
+                transFat:5,
+                Sodium:300
             }
             
         ,
@@ -98,7 +176,7 @@ const data = [
         productNutrition :
             {
                 Carbohydrates:55,
-                Protiens:12,
+                Proteins:12,
                 fat:33,
                 Energy:200,
                 TransFat:9,
@@ -124,7 +202,7 @@ const data = [
         productNutrition :
             {
                 Carbohydrates:12,
-                Protiens:17,
+                Proteins:17,
                 fat:71,
                 Energy:629,
                 transFat:0,
@@ -149,7 +227,7 @@ const data = [
         productNutrition :
             {
                 Carbohydrates:99,
-                Protiens:1,
+                Proteins:57,
                 fat:0,
                 Energy:57,
                 transFat:0,
@@ -175,7 +253,7 @@ const data = [
         productNutrition :
             {
                 Carbohydrates:86,
-                Protiens:7,
+                Proteins:89,
                 fat:7,
                 Energy:49,
                 transFat:0,
@@ -199,7 +277,7 @@ const data = [
         productNutrition :
             {
                 Carbohydrates:19,
-                Protiens:16,
+                Proteins:40,
                 fat:65,
                 Energy:276,
                 transFat:0,
@@ -225,7 +303,7 @@ const data = [
         productNutrition :
             {
                 Carbohydrates:87,
-                Protiens:8,
+                Proteins:40,
                 fat:5,
                 Energy:52,
                 transFat:9,

@@ -13,7 +13,7 @@ function CategoryListProduct(props) {
     {
         id:"2",
         src:"/images//motherdiary.png",
-        name:"Diary"
+        name:"Dairy"
     },{
         id:"3",
         src:"/images/Cavins.png",
@@ -41,14 +41,18 @@ function CategoryListProduct(props) {
     }]
 
     useEffect(()=>{
+        console.log(sel.name);
         category.map((l)=>{
-            if(l.name === sel.name){
+            console.log(l);
+            if(l.name == sel.name){
+                console.log('selece');
                 let elem = document.getElementById(l.id)
                 let nam = document.getElementById(l.name)
                 elem.classList.add('imgactive');
                 nam.classList.add('active')
             }
         })
+       
 
     },[sel])
     const handleClick = (id) =>{
@@ -81,10 +85,17 @@ function CategoryListProduct(props) {
                         <img key={item.id} src={item.src} alt={item.id} />
                         </div>
                         <div className="name" id={item.name}>{item.name}</div>
+                       
+                        
                     </NavLink>
                    )
+                   
                 })
+                
             }
+             {/* <div id="show-line" className='showl'>
+                    <span><hr /></span>
+            </div> */}
        
     </div>
     </>

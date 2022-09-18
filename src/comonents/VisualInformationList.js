@@ -11,7 +11,7 @@ function VisualInformationList(props) {
   };
   const productNutriList = [
     "Carbohydrates",
-    "Protiens",
+    "Proteins",
     "fat",
     "Energy",
     "transFat",
@@ -26,7 +26,7 @@ function VisualInformationList(props) {
       <div className="visual_list_wrapper">
         <div className="listheader">
           <div className="leftheader">
-            Visual Information{" "}
+            Visualise  Information of Nutrients{" "}
             <select onChange={(e) => handleChange(e)}>
               {" "}
               {productNutriList.map((i) => {

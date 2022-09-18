@@ -15,7 +15,7 @@ function ProgressBarBig(props) {
     percent = (props.productNutrition / 100) * 100;
   }
 
-if(ingri === "Protiens"){
+if(ingri === "Proteins"){
     
     if (percent <= 25 && percent > 0) {
         bg_20 = "percent_20_p";

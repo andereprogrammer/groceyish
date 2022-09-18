@@ -11,7 +11,7 @@ function CategoryList() {
     {
         id:"2",
         src:"/images//motherdiary.png",
-        name:"Diary"
+        name:"Dairy"
     },{
         id:"3",
         src:"/images/Cavins.png",

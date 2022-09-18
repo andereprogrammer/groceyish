@@ -13,16 +13,22 @@ function Products() {
     let value = location.state
     let fin = {name:""};
     let categoryItems = []
+    let ky = Object.keys(value)
 
-    if(Object.keys(value) === "name"){
+    if(ky[0] === "name"){
       data.map((d)=>{
+        console.log(d);
         if(value.name == d.productCategory){
+            fin.name=value.name
             categoryItems.push(d)
         }
     })
-     fin.name=value
-    }else{
+     
+    }
+    if(ky[0] === "itemInfo")
+    {
       fin.name = value.itemInfo.productInfo.productCategory
+      console.log(fin);
       data.map((d)=>{
         if(value.itemInfo.productInfo.productCategory == d.productCategory){
             categoryItems.push(d)

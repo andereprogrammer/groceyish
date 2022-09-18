@@ -11,7 +11,7 @@ function ProductListPrediction() {
   };
   const productNutriList = [
     "Carbohydrates",
-    "Protiens",
+    "Proteins",
     "fat",
     "Energy",
     "transFat",
@@ -26,7 +26,7 @@ function ProductListPrediction() {
       <div className="prediction_list_wrapper">
         <div className="listheader">
           <div className="leftheader">
-            Based on your Previous Order{" "}
+            Based on your Previous Orders * {" "}
             <select onChange={(e) => handleChange(e)}>
               {" "}
               {productNutriList.map((i) => {

@@ -7,6 +7,9 @@ function ItemCardDetailed(props) {
   let it = props
   let keys = Object.keys(props.productInfo.productNutrition);
   let mainValue = props.productInfo.productNutrition[props.productNutrition];
+  let val = props.productNutrition
+
+  console.log(mainValue);
   return (
     <div className="item_detail">
       <div className="item_detail_container_wrapper">
@@ -26,7 +29,7 @@ function ItemCardDetailed(props) {
           {props.productNutrition} - {mainValue}g
         </div>
         <div className="item_detail_progress_bar">
-          <ProgressBar productNutrition={mainValue} />
+          <ProgressBar productNutrition={mainValue} productNutriName = {val}/>
         </div>
         <div className="item_detail_star_rating">
         <div className="item_detail_img_space_rating">
